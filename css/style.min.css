@@ -1,1 +1,1 @@
-body{background-image:linear-gradient(225deg, #87cefa, #1e90ff)}
+*{box-sizing:border-box;margin:0}#home{background-image:linear-gradient(225deg, #87cefa, #1e90ff);height:100vh}#home div img{width:200px;border-radius:50%}#about,#work,#contact{height:50vh}.parallax{background-image:url(../img/grass.jpg);height:20vh;background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:cover}
