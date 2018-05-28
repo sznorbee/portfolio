@@ -1,5 +1,4 @@
 $skyblue: linear-gradient(225deg, #87cefa, #1e90ff)
-
 //basic settings
 *
   box-sizing: border-box
@@ -15,6 +14,8 @@ body
   height: 100vh
 
   nav
+    background-color: red
+
     ul
       padding: 0
       display: flex
@@ -52,10 +53,18 @@ body
       font-size: 1.3rem
       font-weight: 300
 
+//sticky menu
+.sticky
+  position: fixed
+  z-index: 10
+  width: 100%
+
 #about, #contact
+  background-color: green
   height: 50vh
 
 #Portfolio
+  background-color: grey
   display: flex
   flex-wrap: wrap
 
