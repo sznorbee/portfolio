@@ -24,7 +24,6 @@ $(document).ready(function()
   $(document).on("scroll", function()
   {
     var distance = $(document).scrollTop();
-    console.log(distance);
     if(distance>currentScroll)
     {
       $("nav").removeClass("sticky");
@@ -33,10 +32,5 @@ $(document).ready(function()
           }
     currentScroll = distance;
   });
-
-    //écoute de la souris
-  $(document).on("mousemove", function(event){
-    console.log(event.pageX + "/" + event.pageY);
-  })
 
 }); //end of jquery
