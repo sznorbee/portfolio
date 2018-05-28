@@ -1,4 +1,7 @@
 $skyblue: linear-gradient(225deg, #87cefa, #1e90ff)
+$skyblue2: linear-gradient(90deg, #68bff6, #4da5fb)
+$skyblue2rev: linear-gradient(270deg, #68bff6, #4da5fb)
+
 //basic settings
 *
   box-sizing: border-box
@@ -9,12 +12,15 @@ body
   font-family: 'Montserrat', Verdana, Arial, Helvetica, sans-serif
   font-size: 100%
 
+main
+  background-image: $skyblue2
+
 #home
-  background-image: $skyblue
+  //background-image: $skyblue
   height: 100vh
 
   nav
-    background-image: $skyblue
+    background-image: $skyblue2
 
     ul
       padding: 0
@@ -61,8 +67,8 @@ body
   z-index: 10
   width: 100%
 
-#about, #contact
-  background-color: green
+#about
+  //background-color: $darkblue
   height: 50vh
 
   h1
@@ -72,7 +78,7 @@ body
     font-size: 1.8rem
 
 #Portfolio
-  background-color: grey
+  //background-color: $lightblue
   display: flex
   flex-wrap: wrap
 
@@ -98,10 +104,14 @@ body
     div
       display: block
     img
-      opacity: 0.2
+      opacity: 0.1
 
 .text-on-image
   position: absolute
-  bottom: 10px
-  left: 10px
+  top: 0
+  left: 0
   color: inherit
+
+#contact
+  //background-color: $darkblue
+  height: 50vh
