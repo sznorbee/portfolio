@@ -20,32 +20,19 @@ $(document).ready(function()
   })
 
   //sticky navbar
-  $(document).on("scroll", function(){
-      var distance = $(document).scrollTop();
-      console.log(distance);
-      if(distance >300){
-        console.log("activation de la class")
-        $("nav").addClass("sticky");
-      }else{
-        console.log("remettre le menu à sa place")
-        $("nav").removeClass("sticky");
-      }
-    })
-    /*position:sticky*/
-    //STICKY MENU - scroll up
-      var currentScroll = 0;
-      $(document).on("scroll", function(){
-        var distance = $(document).scrollTop();
-        console.log(distance);
-        if(distance>currentScroll){
-          //console.log("vers le bas");
-          $("nav").removeClass("sticky");
-        }else{
-          //console.log("vers le haut");
-          $("nav").addClass("sticky");
-        }
-        currentScroll = distance;
-      });
+  var currentScroll = 0;
+  $(document).on("scroll", function()
+  {
+    var distance = $(document).scrollTop();
+    console.log(distance);
+    if(distance>currentScroll)
+    {
+      $("nav").removeClass("sticky");
+    }else{
+            $("nav").addClass("sticky");
+          }
+    currentScroll = distance;
+  });
 
     //écoute de la souris
   $(document).on("mousemove", function(event){
